@@ -1,3 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+body{
+    margin: 0;
+}
+
 .body{
-    
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.age-calculator-container{
+    background-color: hsl(0, 0%, 100%);
+    padding:24px;
+    margin:0 20px;
+    border-radius: 14px;
+    border-bottom-right-radius: 30%;
+}
+
+.inputs-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input-box{
+    margin:10px;
+}
+
+.input-heading{
+    color: hsl(0, 1%, 44%);
+}
+
+.input-field{
+    padding:10px 0px;
+    border:1px solid hsl(0, 0%, 86%);
+    background-color: transparent;
+    color: hsl(0, 1%, 44%);
+    width: 80%;
+    border-radius: 8px;
+    padding-left: 15px;
+    outline-color: hsl(259, 100%, 65%);
+    outline-width: 1px;
+    font-size: 24px;
+}
+
+.arrow{
+    background-color: hsl(259, 100%, 65%);
+    padding: 10px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.arrow:active,.arrow:focus{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.line{
+    border-top:1px solid hsl(0, 0%, 86%);
+    width: 100%;
+}
+
+.separator{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.result-years{
+    font-style: italic;
+    font-weight: 800;
+    margin: 0;
+    line-height:1.2em;
+    font-size: 64px;
+}
+
+.result-years span{
+    color: hsl(259, 100%, 65%);
+}
+
+@media screen and (min-width:720px){
+    .age-calculator-container{
+        width: 60%;
+    }
+}
+
+
+@media screen and (min-width:1440px){
+    .age-calculator-container{
+        width: 35%;
+    }
 }
