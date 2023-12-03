@@ -1,47 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Age calculator app</title>
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <div class="body">
-    <div class="age-calculator-container">
-      <div class="inputs-container">
-        <div class="input-box">
-          <label class="input-heading">DAY</label>
-          <input type="" placeholder="DD" class="input-field" />
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="age-calculator-container">
+        <form class="inputs-container">
+          <div class="input-box">
+            <label class="input-heading" id="dayInputHeading">DAY</label>
+            <input type="" placeholder="DD" class="input-field" id="dayInput" required/>
+            <p class="validation-error" id="dayValidationError"></p>
+          </div>
+          <div class="input-box">
+            <label class="input-heading" id="monthInputHeading">MONTH</label>
+            <input
+              type=""
+              placeholder="MM"
+              class="input-field"
+              id="monthInput"
+              required
+            />
+            <p class="validation-error" id="monthValidationError"></p>
+          </div>
+          <div class="input-box">
+            <label class="input-heading" id="yearInputHeading">YEAR</label>
+            <input
+              type=""
+              placeholder="YYYY"
+              class="input-field"
+              id="yearInput"
+              required
+            />
+            <p class="validation-error" id="yearValidationError"></p>
+          </div>
+        </form>
+        <div class="separator">
+          <div class="line"></div>
+          <button class="submit-btn" id="submitBtn">
+            <img src="./assets/images/icon-arrow.svg" class="arrow" />
+          </button>
         </div>
-        <div class="input-box">
-          <label class="input-heading">MONTH</label>
-          <input type="" placeholder="MM" class="input-field" />
+        <div class="result-container">
+          <h1 class="result-years"><span>- -</span>years</h1>
+          <h1 class="result-years"><span>- -</span>months</h1>
+          <h1 class="result-years"><span>- -</span>days</h1>
         </div>
-        <div class="input-box">
-          <label class="input-heading">YEAR</label>
-          <input type="" placeholder="YYYY" class="input-field" />
-        </div>
-      </div>
-      <div class="separator">
-        <div class="line"></div>
-        <img src="./assets/images/icon-arrow.svg" class="arrow" />
-      </div>
-      <div class="result-container">
-        <h1 class="result-years"><span>- -</span>years</h1>
-        <h1 class="result-years"><span>- -</span>months</h1>
-        <h1 class="result-years"><span>- -</span>days</h1>
       </div>
     </div>
-  </div>
 
-  <!-- <div class="attribution">
+    <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

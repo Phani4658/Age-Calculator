@@ -27,7 +27,7 @@ body{
 
 .inputs-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
 
@@ -86,6 +86,28 @@ body{
     color: hsl(259, 100%, 65%);
 }
 
+.submit-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.validation-error{
+    font-size: 12px;
+    margin: 6px;
+    font-weight: 400;
+    font-style: italic;
+    color: hsl(0, 100%, 67%);
+}
+
+.wrong-input-box{
+    border-color: hsl(0, 100%, 67%);
+    outline-color: hsl(0, 100%, 67%);
+}
+
+.wrong-input-heading{
+    color: hsl(0, 100%, 67%);
+}
+
 @media screen and (min-width:720px){
     .age-calculator-container{
         width: 60%;
@@ -98,3 +120,4 @@ body{
         width: 35%;
     }
 }
+
